@@ -16,14 +16,14 @@ ActiveRecord::Schema.define(version: 2020_10_09_005740) do
   enable_extension "plpgsql"
 
   create_table "climbing_styles", force: :cascade do |t|
-    t.integer "profile_id"
+    t.integer "user_id"
     t.string "climbing_type"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "images", force: :cascade do |t|
-    t.integer "profile_id"
+    t.integer "user_id"
     t.string "image_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
