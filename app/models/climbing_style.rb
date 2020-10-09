@@ -1,0 +1,2 @@
+class ClimbingStyle < ApplicationRecord
+end
