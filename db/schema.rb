@@ -16,8 +16,7 @@ ActiveRecord::Schema.define(version: 2020_10_09_005740) do
   enable_extension "plpgsql"
 
   create_table "climbing_styles", force: :cascade do |t|
-    t.integer "user_id"
-    t.string "climbing_type"
+    t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -31,7 +30,7 @@ ActiveRecord::Schema.define(version: 2020_10_09_005740) do
 
   create_table "messages", force: :cascade do |t|
     t.integer "sender_id"
-    t.integer "reciever_id"
+    t.integer "receiver_id"
     t.string "message"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
