@@ -1,0 +1,5 @@
+@messages.map do |message|
+  {
+    message: message,
+  }
+end

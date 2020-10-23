@@ -1,10 +1,12 @@
 @users.map do |user|
   {
+    images: user.images[0],
     name: "#{user.first_name} #{user.last_name}",
     years_experiance: user.years_xp,
     victor_scale: user.victor_scale,
     font_scale: user.font_scale,
     description: user.description,
+    climbing_style: user.climbing_styles,
     location: user.location,
   }
 end
