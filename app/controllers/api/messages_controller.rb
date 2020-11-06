@@ -13,10 +13,16 @@ class Api::MessagesController < ApplicationController
       receiver_id: params[:receiver_id],
       message: params[:message],
     )
-    if @message.save
-      render json: "Success"
-    else
-      render json: { errors: @message.errors.full_messages }, status: :bad_request
-    end
+
+    ActionCable.server.broadcast "messages_channel", {
+      id: @message.id,
+      name: @message.user.name,
+      body: @message.body,
+      created_at: @message.created_at,
+    }
+
+    @message.save
+
+    render json: "Success"
   end
 end
