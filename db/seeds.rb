@@ -1,10 +1,10 @@
 User.create!(email: "test@example.com", password: "password", first_name: "Testy", last_name: "Testerson", years_xp: 2, victor_scale: "V3", font_scale: "5.9", description: "I like Cheese", location: "CT")
 User.create!(email: "alan@example.com", password: "password", first_name: "Alan", last_name: "Barton", years_xp: 7, victor_scale: "V6", font_scale: "5.11", description: "I live to climb", location: "RI")
 
-Image.create!(user_id: 1, image_url: "image1.url")
-Image.create!(user_id: 1, image_url: "image2.url")
-Image.create!(user_id: 2, image_url: "image3.url")
-Image.create!(user_id: 2, image_url: "image4.url")
+Image.create!(user_id: 1, image_url: "https://cdn.xl.thumbs.canstockphoto.com/an-image-of-a-smiling-man-who-has-an-idea-a-handsome-bearded-guy-in-a-sweater-just-came-up-with-a-stock-image_csp64020667.jpg")
+Image.create!(user_id: 1, image_url: "https://cdn.xl.thumbs.canstockphoto.com/an-image-of-a-smiling-man-who-has-an-idea-a-handsome-bearded-guy-in-a-sweater-just-came-up-with-a-stock-image_csp64020667.jpg")
+Image.create!(user_id: 2, image_url: "https://cdn.xl.thumbs.canstockphoto.com/an-image-of-a-smiling-man-who-has-an-idea-a-handsome-bearded-guy-in-a-sweater-just-came-up-with-a-stock-image_csp64020667.jpg")
+Image.create!(user_id: 2, image_url: "https://cdn.xl.thumbs.canstockphoto.com/an-image-of-a-smiling-man-who-has-an-idea-a-handsome-bearded-guy-in-a-sweater-just-came-up-with-a-stock-image_csp64020667.jpg")
 
 ClimbingStyle.create!(name: "bouldering")
 ClimbingStyle.create!(name: "sport")

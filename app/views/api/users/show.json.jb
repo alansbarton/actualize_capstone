@@ -1,4 +1,5 @@
 {
+  id: @user.id,
   images: @user.images,
   name: "#{@user.first_name} #{@user.last_name}",
   years_experiance: @user.years_xp,

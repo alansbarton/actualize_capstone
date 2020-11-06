@@ -1,5 +1,6 @@
 @users.map do |user|
   {
+    id: user.id,
     images: user.images[0],
     name: "#{user.first_name} #{user.last_name}",
     years_experiance: user.years_xp,
