@@ -1,0 +1,7 @@
+{
+  id: @message.id,
+  message: @message.message,
+  sender_id: @message.sender_id,
+  receiver_id: @message.receiver_id,
+  created_at: @message.created_at,
+}

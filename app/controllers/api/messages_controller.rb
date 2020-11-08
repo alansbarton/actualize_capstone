@@ -10,19 +10,21 @@ class Api::MessagesController < ApplicationController
   def create
     @message = Message.new(
       sender_id: current_user.id,
-      receiver_id: params[:receiver_id],
+      receiver_id: params[:id],
       message: params[:message],
     )
 
-    ActionCable.server.broadcast "messages_channel", {
-      id: @message.id,
-      name: @message.user.name,
-      body: @message.body,
-      created_at: @message.created_at,
-    }
+    if @message.save
+      ActionCable.server.broadcast "messages_channel", {
+        id: @message.id,
+        message: @message.message,
+        sender_id: @message.sender_id,
+        created_at: @message.created_at,
+      }
 
-    @message.save
-
-    render json: "Success"
+      render "show.json.jb"
+    else
+      render json: { errors: @message.errors.full_messages }, status: :bad_request
+    end
   end
 end
