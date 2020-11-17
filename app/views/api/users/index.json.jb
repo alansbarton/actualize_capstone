@@ -9,5 +9,6 @@
     description: user.description,
     climbing_style: user.climbing_styles,
     location: user.location,
+    messages: user.messages_to_user(current_user.id),
   }
 end

@@ -1,10 +1,10 @@
 User.create!(email: "test@example.com", password: "password", first_name: "Testy", last_name: "Testerson", years_xp: 2, victor_scale: "V3", font_scale: "5.9", description: "I like Cheese", location: "CT")
 User.create!(email: "alan@example.com", password: "password", first_name: "Alan", last_name: "Barton", years_xp: 7, victor_scale: "V6", font_scale: "5.11", description: "I live to climb", location: "RI")
 
-Image.create!(user_id: 1, image_url: "https://cdn.xl.thumbs.canstockphoto.com/an-image-of-a-smiling-man-who-has-an-idea-a-handsome-bearded-guy-in-a-sweater-just-came-up-with-a-stock-image_csp64020667.jpg")
-Image.create!(user_id: 1, image_url: "https://cdn.xl.thumbs.canstockphoto.com/an-image-of-a-smiling-man-who-has-an-idea-a-handsome-bearded-guy-in-a-sweater-just-came-up-with-a-stock-image_csp64020667.jpg")
-Image.create!(user_id: 2, image_url: "https://cdn.xl.thumbs.canstockphoto.com/an-image-of-a-smiling-man-who-has-an-idea-a-handsome-bearded-guy-in-a-sweater-just-came-up-with-a-stock-image_csp64020667.jpg")
-Image.create!(user_id: 2, image_url: "https://cdn.xl.thumbs.canstockphoto.com/an-image-of-a-smiling-man-who-has-an-idea-a-handsome-bearded-guy-in-a-sweater-just-came-up-with-a-stock-image_csp64020667.jpg")
+Image.create!(user_id: 1, image_url: "https://i.pinimg.com/originals/a6/80/40/a680405617d4821c5af6a1bbb32878e4.jpg")
+Image.create!(user_id: 1, image_url: "https://dvmzgq36yy8ja.cloudfront.net/wp-content/uploads/2018/03/Climber-Kathy-Karlo.jpg")
+Image.create!(user_id: 2, image_url: "https://www.climbstation.com/uploads/5/1/3/4/5134929/2415193_orig.jpg")
+Image.create!(user_id: 2, image_url: "https://images.squarespace-cdn.com/content/v1/55830fd9e4b0ec758c892f81/1602437053827-2D2BPBS11VC5X1GQDZEX/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/Holz_ElPotreroChico-5544.jpg")
 
 ClimbingStyle.create!(name: "bouldering")
 ClimbingStyle.create!(name: "sport")

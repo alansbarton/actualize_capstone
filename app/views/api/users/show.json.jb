@@ -8,4 +8,6 @@
   description: @user.description,
   climbing_style: @user.climbing_styles,
   location: @user.location,
+  current_user: current_user,
+  current_user_images: current_user.images,
 }
