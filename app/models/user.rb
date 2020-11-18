@@ -11,8 +11,8 @@ class User < ApplicationRecord
   has_many :receivers, through: :receiver_messages, source: :receiver
 
   def messages_to_user(user_id)
-    sent = sender_messages.select { |message| message.receiver_id == user_id }
-    received = receiver_messages.select { |message| message.sender_id == user_id }
+    sent = sender_messages.select { |message| message.sender_id == user_id }
+    received = receiver_messages.select { |message| message.receiver_id == user_id }
     (sent + received).sort_by { |message| message.created_at }
   end
 end
